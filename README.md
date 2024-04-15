@@ -37,6 +37,11 @@
 ### touch - used to create a file.
 			* eg. touch index.html - creates a html file called index.
 
+
+			git remote -v - checks for present link b2n local repo and remote repo
+			git remote add upstream <upstream-url> -  creates link b2n local repo and original repo
+			git pull upstream <branch-name> - fetches from the original upstream repository, updating your remote-tracking branches, and merging any changes into your local branches 
+
   
 
 
