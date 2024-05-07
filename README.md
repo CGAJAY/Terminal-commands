@@ -1,5 +1,13 @@
 # Git Commands
 
+	If we have a file that we do not want to track, we just put it inside the .gitignore file. .gitignore file contains a list of configurations that affects the behavior of git commands.
+
+### git config --global user.name "YOUR NAME"
+	Sets username used by Git to identify the user
+
+### git config --global user.email "YOUR EMAIL"
+	Sets email used by Git to identify the user
+
 ### cd - used to navigate to a directory. Takes an arguement of directory file path.
   				* eg. cd desktop -navigates to desktop.
 
@@ -37,10 +45,27 @@
 ### touch - used to create a file.
 			* eg. touch index.html - creates a html file called index.
 
+### git remote -v 
+     checks for present link b2n local repo and remote repo
 
-			git remote -v - checks for present link b2n local repo and remote repo
-			git remote add upstream <upstream-url> -  creates link b2n local repo and original repo
-			git pull upstream <branch-name> - fetches from the original upstream repository, updating your remote-tracking branches, and merging any changes into your local branches 
+### git remote add upstream <upstream-url> 
+	  creates link b2n local repo and original repo
+
+### git pull upstream <branch-name> 
+		 fetches from the original upstream repository, updating your remote-tracking branches, and merging any changes into your local branches 
+
+### git rm 
+		removes files from both the working directory and the Git index (also known as the staging area). When you use git rm, Git removes the specified files from your working directory and stages their removal in the index. This means that the files will be deleted from both your filesystem and the Git repository history when you commit the changes.
+
+### git rm --cached
+		 removes files only from the Git index (staging area), leaving them intact in your working directory. When you use git rm --cached, Git removes the specified files from the index/staging area but leaves them untouched in your working directory. This means that the files are no longer tracked by Git, but they remain in your filesystem. It's commonly used when you want to stop tracking files that were previously added to the repository but you still want to keep them locally.
+
+### git config alias
+	helps us to create shortcuts.
+	So if we wanted to type git st and have it function like git status, we would type git config alias.st status. Now we can type git st and have the same output as if we typed git status.
+
+	If you would like your alias to be a part of your global configuration, add the --global command after git config. For example, to alias git i to git init globally, you would type git config --global alias.i init.
+
 
   
 
