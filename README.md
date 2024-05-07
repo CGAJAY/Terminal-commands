@@ -66,6 +66,9 @@
 
 	If you would like your alias to be a part of your global configuration, add the --global command after git config. For example, to alias git i to git init globally, you would type git config --global alias.i init.
 
+### git log
+	lists all the commits made
+
 
   
 
