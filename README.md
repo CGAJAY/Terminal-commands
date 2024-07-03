@@ -30,7 +30,7 @@
 ### git branch -d <branch_name> - Delete the specific branch.
 	This is a safe way in that git prevents me from deleting the branch if it has unmerged changes.
 
-### git branch -d <branch_name> - Delete the specific branch.
+### git branch -D <branch_name> - Delete the specific branch.
 	This deletes the specific branch even if it has unmerged changes.
 
 ### git branch -m <new_branch_name> - Used for renaming branches.
